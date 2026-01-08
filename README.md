@@ -30,6 +30,8 @@ erra = np.full_like(a, 0.01)
 lag, dcf = zdcf.compute(ta, a, erra, mbins=50, maxlag=50.0, res=0.0005)
 ```
 
+See `examples/*` for more.
+
 ## Notes
 
 This repository uses a `pyproject.toml` build with **Meson** via `meson-python`.
