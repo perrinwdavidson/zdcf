@@ -5,7 +5,7 @@ See [Alexander (1997)](https://link.springer.com/chapter/10.1007/978-94-015-8941
 
 ## Install
 
-You need a Fortran compiler (e.g., `gfortran`). Run the following:
+You need a Fortran compiler (e.g., `gfortran`) installed. Run the following:
 
 ```bash
 python -m pip install -U pip
