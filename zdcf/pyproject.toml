@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+  "meson-python>=0.16",
+  "numpy>=2.0",
+]
+build-backend = "mesonpy"
+
+[project]
+name = "zdcf"
+version = "0.1.0"
+description = "Z-transformed Discrete Correlation Function (ZDCF) wrapped with NumPy f2py"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Perrin W. Davidson", email = "perrinwd@mit.edu"}]
+license = {text = "BSD-3-Clause"}
+keywords = ["fortran", "f2py", "timeseries", "correlation", "astronomy"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Fortran",
+  "License :: OSI Approved :: BSD License",
+]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+plot = ["matplotlib"]
+
+[tool.meson-python]
+# Keep local builds reproducible; you can tune these later.
